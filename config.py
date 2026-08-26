@@ -1,1 +1,0 @@
-API_KEY = "minha-chave-secreta-de-teste"
