@@ -1,10 +1,10 @@
 import pytest
 
 from calculadora.operacoes import (
+    divisao,
+    multiplicacao,
     soma,
     subtracao,
-    multiplicacao,
-    divisao,
 )
 
 
