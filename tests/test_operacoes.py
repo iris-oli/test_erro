@@ -9,7 +9,7 @@ from calculadora.operacoes import (
 
 
 def test_soma():
-    assert soma(2, 3) == 10
+    assert soma(2, 3) == 5
 
 
 def test_subtracao():
