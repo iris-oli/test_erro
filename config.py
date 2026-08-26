@@ -1,1 +1,1 @@
-API_KEY = "sk-proj-1234567890abcdefghijklmnopqrstuvwxyz"
+API_KEY = "minha-chave-secreta-de-teste"

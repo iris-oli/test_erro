@@ -1,0 +1,7 @@
+title = "Configuração de segurança do projeto"
+
+[[rules]]
+id = "api-key-teste"
+description = "Detecta chave de API fictícia usada para teste do pipeline"
+regex = '''minha-chave-secreta-de-teste'''
+secretGroup = 0
