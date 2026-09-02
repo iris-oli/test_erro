@@ -8,12 +8,13 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
   ci:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        python-version: ["3.12", "3.13"]
+        os: [ubuntu-22.04, ubuntu-24.04, ubuntu-24.04-arm]
+        python-version: ["3.11", "3.12"]
 
     runs-on: ${{ matrix.os }}
 
@@ -44,7 +45,7 @@ jobs:
           python -m pytest --cov=calculadora --cov-fail-under=80
 
       - name: Análise de segurança
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v3
         with:
           config: .gitleaks.toml
         env:
